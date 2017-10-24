@@ -7,7 +7,7 @@
             "type": "host",
             "metric": "custom.macbook.pmset.ib0",
             "operator": "<",
-            "warning": 50,
+            "warning": 40,
             "critical": 10,
             "duration": 1,
             "scopes": [
