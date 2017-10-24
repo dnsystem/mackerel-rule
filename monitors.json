@@ -1,0 +1,145 @@
+{
+    "monitors": [
+        {
+            "id": "2BAVpWVCDAG",
+            "name": "MacBookバッテリー",
+            "memo": "バッテリーが減ってきた",
+            "type": "host",
+            "metric": "custom.macbook.pmset.ib0",
+            "operator": "<",
+            "warning": 50,
+            "critical": 10,
+            "duration": 1,
+            "scopes": [
+                "home: mac"
+            ]
+        },
+        {
+            "id": "2Zm96sQ6vqU",
+            "name": "nasne内蔵",
+            "type": "host",
+            "metric": "custom.nasne.volumes.UsedInt",
+            "operator": ">",
+            "warning": 90,
+            "critical": 95,
+            "duration": 3,
+            "scopes": [
+                "home"
+            ]
+        },
+        {
+            "id": "2B56DZTyN9G",
+            "name": "NVR500 CPU",
+            "memo": "ルータのCPU負荷",
+            "type": "host",
+            "metric": "custom.nvr.cpu.1min",
+            "operator": ">",
+            "warning": 50,
+            "critical": 80,
+            "duration": 1,
+            "scopes": [
+                "home: nw"
+            ]
+        },
+        {
+            "id": "2B571XFkZM3",
+            "name": "NVR500 メモリー",
+            "type": "host",
+            "metric": "custom.nvr.memory.usage",
+            "operator": ">",
+            "warning": 70,
+            "critical": 90,
+            "duration": 1,
+            "scopes": [
+                "home: nw"
+            ]
+        },
+        {
+            "id": "2AX4eBYRCoL",
+            "name": "CPU %",
+            "type": "host",
+            "metric": "cpu%",
+            "operator": ">",
+            "warning": 70,
+            "critical": 90,
+            "duration": 3,
+            "excludeScopes": [
+                "home"
+            ]
+        },
+        {
+            "id": "2BA1sEfAL75",
+            "name": "CPU % mac",
+            "type": "host",
+            "metric": "cpu%",
+            "operator": ">",
+            "warning": 95,
+            "critical": 99,
+            "duration": 5,
+            "scopes": [
+                "home: mac"
+            ]
+        },
+        {
+            "id": "2AX4jannFtN",
+            "name": "Filesystem %",
+            "type": "host",
+            "metric": "disk%",
+            "operator": ">",
+            "warning": 80,
+            "critical": 95,
+            "duration": 3,
+            "excludeScopes": [
+                "home"
+            ]
+        },
+        {
+            "id": "2BA5Wr7ETpN",
+            "name": "Filesystem % mac",
+            "memo": "ディスクが埋まってきた",
+            "type": "host",
+            "metric": "disk%",
+            "operator": ">",
+            "warning": 98,
+            "critical": 99.9,
+            "duration": 5,
+            "scopes": [
+                "home: mac"
+            ]
+        },
+        {
+            "id": "2AX4gughPto",
+            "name": "Memory %",
+            "type": "host",
+            "metric": "memory%",
+            "operator": ">",
+            "warning": 80,
+            "critical": 95,
+            "duration": 3,
+            "excludeScopes": [
+                "home"
+            ]
+        },
+        {
+            "id": "2BA1z58psXs",
+            "name": "Memory % mac",
+            "type": "host",
+            "metric": "memory%",
+            "operator": ">",
+            "warning": 95,
+            "critical": 99,
+            "duration": 1,
+            "scopes": [
+                "home: mac"
+            ]
+        },
+        {
+            "id": "2cYj8W8ZBfh",
+            "name": "connectivity",
+            "type": "connectivity",
+            "excludeScopes": [
+                "home: mobile"
+            ]
+        }
+    ]
+}
